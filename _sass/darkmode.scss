@@ -17,7 +17,10 @@ body.dark  {
     color: var(--color__gray--light)
   }
   code, pre {
-    color: var(--color__gray--dark);
+    line-height: 1.5;
+    border-radius: 8px;
+    background-color:rgb(15, 15, 15);
+    color: var(--color__gray--light);
     font-family: var(--typography__default);
   }
   .tags {

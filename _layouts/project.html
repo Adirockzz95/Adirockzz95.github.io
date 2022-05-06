@@ -8,8 +8,10 @@ layout: default
 
 <header>
   <h1>{{ page.title }}</h1>
+  <p style="font-size: 18px;">{{ page.pitch }}</p>
+  <br>
   <header class="title-tags">
-    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%-d %B, %Y. It was a %A.' }}</time>
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%-d %B, %Y' }}</time>
     <div class="tags-container">
       Posted under <span>
           {% for tag in page.tags %}
@@ -33,10 +35,10 @@ layout: default
 
     <hr class="stylish"/>
 
-    {% include featured.html %}
+    <!-- {% include featured.html %}
 
     <hr class="stylish"/>
-
+    !-->
     <section class="pagination">
       {% if page.previous.url %}
       <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
